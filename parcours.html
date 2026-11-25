@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Parcours — Babacar Djitte</title>
+  <meta name="description" content="Parcours de Babacar Djitte : formation et expérience professionnelle.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <a href="index.html" class="logo">BD<span>.</span></a>
+    <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span></button>
+    <nav class="nav-links">
+      <a href="apropos.html">À propos</a>
+      <a href="competences.html">Compétences</a>
+      <a href="parcours.html" class="active" aria-current="page">Parcours</a>
+      <a href="projets.html">Projets</a>
+      <a href="contact.html" class="btn btn-small">Contact</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <section class="section reveal">
+      <h1 class="section-title"><span>03.</span> Parcours</h1>
+      <ol class="timeline">
+        <li>
+          <time>2026 — 2027</time>
+          <h3>Bachelor Sciences du Système Numérique (2<sup>e</sup> année)</h3>
+          <p class="where">École CCCLX, Paris Villejuif</p>
+          <p>Administration systèmes &amp; réseaux, support IT, bases de données, programmation, communication.</p>
+        </li>
+        <li>
+          <time>Stage</time>
+          <h3>Développeur — Application web d'IA</h3>
+          <p class="where">Conception et développement d'un outil de transcription et de comptes-rendus automatiques</p>
+          <p>Backend Python/FastAPI, frontend React/Vite, IA locale (Whisper + Mistral via Ollama), authentification JWT, déploiement Docker Compose.</p>
+        </li>
+      </ol>
+      <a class="next-page" href="projets.html"><small>Page suivante</small>Projets →</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Babacar Djitte — Paris, France</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

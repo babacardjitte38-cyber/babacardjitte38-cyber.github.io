@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projets — Babacar Djitte</title>
+  <meta name="description" content="Projets de Babacar Djitte : application d'IA locale, mise en conformité RGPD, portfolio.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <a href="index.html" class="logo">BD<span>.</span></a>
+    <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span></button>
+    <nav class="nav-links">
+      <a href="apropos.html">À propos</a>
+      <a href="competences.html">Compétences</a>
+      <a href="parcours.html">Parcours</a>
+      <a href="projets.html" class="active" aria-current="page">Projets</a>
+      <a href="contact.html" class="btn btn-small">Contact</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <section class="section reveal">
+      <h1 class="section-title"><span>04.</span> Projets</h1>
+      <div class="filters" role="group" aria-label="Filtrer les projets">
+        <button class="active" data-filter="all">Tous</button>
+        <button data-filter="stage">Stage</button>
+        <button data-filter="ecole">Scolaire</button>
+        <button data-filter="perso">Personnel</button>
+      </div>
+      <div class="projects">
+        <article class="project card featured" data-cat="stage">
+          <div class="project-thumb" style="--c1:#6366f1;--c2:#22d3ee">🎙️</div>
+          <p class="project-kind">Stage</p>
+          <h3>Transcription audio &amp; comptes-rendus par IA</h3>
+          <p>Application web locale qui transcrit un enregistrement audio puis génère automatiquement un compte-rendu, sans envoyer aucune donnée vers le cloud.</p>
+          <ul class="bullets">
+            <li>Backend <strong>Python / FastAPI</strong>, frontend <strong>React / Vite</strong></li>
+            <li>Transcription avec <strong>Whisper</strong>, rédaction avec <strong>Mistral via Ollama</strong> (100&nbsp;% local)</li>
+            <li>Authentification <strong>JWT</strong>, historique <strong>SQLite</strong>, exports <strong>PDF / DOCX</strong></li>
+            <li>Déploiement complet via <strong>Docker Compose</strong> : aucune installation technique côté client</li>
+          </ul>
+          <ul class="tags small"><li>Python</li><li>FastAPI</li><li>React</li><li>IA</li><li>Docker</li></ul>
+        </article>
+        <article class="project card" data-cat="ecole">
+          <div class="project-thumb" style="--c1:#f43f5e;--c2:#f59e0b">🔒</div>
+          <p class="project-kind">Projet scolaire</p>
+          <h3>Projet RGPD — Mise en conformité d'une PME</h3>
+          <p>Accompagnement d'une PME dans sa mise en conformité avec le RGPD.</p>
+          <ul class="bullets">
+            <li>Cartographie des données et registre des traitements</li>
+            <li>Outil de gestion des consentements</li>
+            <li>Audit CNIL et sécurisation (sauvegardes, chiffrement)</li>
+            <li>Implémentation via Wix</li>
+          </ul>
+          <ul class="tags small"><li>RGPD</li><li>Sécurité</li><li>Audit</li><li>Wix</li></ul>
+        </article>
+        <article class="project card" data-cat="perso">
+          <div class="project-thumb" style="--c1:#10b981;--c2:#84cc16">🌐</div>
+          <p class="project-kind">Personnel</p>
+          <h3>Ce portfolio</h3>
+          <p>Site personnel responsive réalisé en HTML, CSS et JavaScript, sans framework : animations, filtres de projets, menu mobile.</p>
+          <ul class="tags small"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+        </article>
+      </div>
+      <a class="next-page" href="contact.html"><small>Page suivante</small>Contact →</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Babacar Djitte — Paris, France</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
