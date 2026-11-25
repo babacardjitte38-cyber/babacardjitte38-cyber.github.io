@@ -357,3 +357,140 @@ strong { font-weight: 600; }
 .qr-codes img { width: 180px; height: auto; box-shadow: 0 14px 30px -18px rgba(0,0,0,.6); }
 .qr-codes figcaption { font-family: var(--font-title); font-size: .68rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; }
 .qr-codes figcaption a { color: var(--accent); border-bottom: 1px solid var(--accent); }
+
+/* =========================================================
+   Version téléphone — améliorations
+   ========================================================= */
+html { -webkit-text-size-adjust: 100%; }
+a, button { -webkit-tap-highlight-color: transparent; }
+body.menu-open { overflow: hidden; }
+
+@media (max-width: 860px) {
+  /* --- Barre du haut plus fine --- */
+  .nav { padding: .6rem 1rem; }
+  .logo { width: 40px; height: 40px; font-size: 1.1rem; }
+  .nav-toggle { width: 44px; height: 44px; z-index: 2; }
+  .nav-toggle span { left: 8px; width: 28px; }
+  .nav-toggle span:first-child { top: 16px; }
+  .nav-toggle span:last-child { bottom: 16px; }
+  .nav-toggle[aria-expanded="true"] span:first-child { top: 21px; }
+  .nav-toggle[aria-expanded="true"] span:last-child { bottom: 21px; }
+
+  /* --- Menu plein écran --- */
+  .nav-links {
+    position: fixed; inset: 0; top: 0;
+    height: 100dvh; padding: 6rem 1.5rem 2rem;
+    flex-direction: column; align-items: stretch; justify-content: flex-start; gap: 0;
+    background: var(--dark); border: 0;
+    transform: translateY(-100%); transition: transform .4s cubic-bezier(.7,0,.2,1);
+  }
+  .nav-links a:not(.btn) {
+    color: #fff; font-size: 1.35rem; font-weight: 800; letter-spacing: .08em;
+    padding: 1.05rem 0; border: 0; border-bottom: 1px solid rgba(255,255,255,.1);
+  }
+  .nav-links a.active { color: var(--accent); border-color: rgba(255,255,255,.1); }
+  .nav-links .btn { margin-top: 2rem; padding: 1.1rem; text-align: center; font-size: .8rem; background: var(--accent); border-color: var(--accent); color: var(--ink); }
+  .menu-open .nav-toggle span { background: #fff; }
+  .menu-open .logo { position: relative; z-index: 2; background: var(--accent); color: var(--ink); }
+  .menu-open .logo span { color: var(--ink); }
+
+  /* --- Marges latérales plus économes --- */
+  .section, .cover { margin: 4.8rem .75rem 1.5rem; }
+  .section { padding: 2.4rem 1.25rem 2rem; }
+  .section::before { left: 1.25rem; right: 1.25rem; height: 10px; }
+  .section-title { font-size: 1.55rem; margin: .4rem 0 1.8rem; gap: .6rem; }
+  .section-title::after { max-width: 80px; }
+
+  /* --- Accueil --- */
+  .cover-dark { padding: 2.2rem 1.4rem 1.8rem; }
+  .cover h1 { font-size: 2.7rem; }
+  .eyebrow { font-size: .64rem; letter-spacing: .22em; padding-right: 3.5rem; }
+  .cover-name { font-size: .9rem; letter-spacing: .2em; }
+  .hero-role { font-size: 1rem; min-height: 3.2em; }
+  .hero-text { font-size: .93rem; }
+  .hero-cta { flex-direction: column; gap: .6rem; margin-top: 1.6rem; }
+  .hero-cta .btn { text-align: center; padding: 1rem; }
+  .cover-side { grid-template-columns: 110px 1fr; grid-template-rows: auto; }
+  .cover-photo { min-height: 0; }
+  .cover-photo .initials { font-size: 2.4rem; }
+  .cover-contact { padding: 1.1rem 1.2rem; }
+  .cover-contact h3 { font-size: .68rem; margin-bottom: .4rem; }
+  .socials { font-size: .8rem; word-break: break-word; }
+  .socials a { display: inline-block; padding: .2rem 0; }
+  .home-menu { margin-top: 1rem; }
+  .home-menu a { padding: 1rem; font-size: .72rem; }
+  .home-menu a span { font-size: 1.15rem; }
+
+  /* --- À propos --- */
+  .about { gap: 1.6rem; }
+  .about-photo { max-width: 170px; margin-bottom: .6rem; }
+  .about-photo::before { inset: 12px -12px -12px 12px; }
+  .photo-placeholder { font-size: 2.8rem; }
+  .stats div { padding: 1rem .4rem 0 0; }
+  .stats strong { font-size: 1.9rem; }
+  .stats span { font-size: .66rem; display: block; line-height: 1.35; margin-top: .3rem; }
+
+  /* --- Compétences --- */
+  .skills { gap: .9rem; }
+  .card { padding: 1.25rem; }
+  .card.project { padding: 0; }
+  .card:hover { box-shadow: none; }
+
+  /* --- Parcours --- */
+  .timeline { padding-left: 1.5rem; }
+  .timeline li { margin-bottom: 2rem; }
+  .timeline li::before { left: calc(-1.5rem - 8px); }
+  .timeline h3 { font-size: .98rem; line-height: 1.35; margin: .3rem 0 .4rem; }
+  .timeline .where { font-size: .88rem; line-height: 1.5; margin-bottom: .3rem; }
+  .timeline p { font-size: .9rem; }
+
+  /* --- Projets --- */
+  .filters {
+    flex-wrap: nowrap; gap: 1.3rem; overflow-x: auto; scrollbar-width: none;
+    margin: 0 -1.25rem 1.4rem; padding: 0 1.25rem;
+  }
+  .filters::-webkit-scrollbar { display: none; }
+  .filters button { flex: none; padding: .7rem 0; }
+  .projects { grid-template-columns: 1fr; gap: 1rem; }
+  .project.featured .project-thumb,
+  .project-thumb { grid-row: auto; min-height: 0; height: 120px; margin-bottom: 1.1rem; font-size: 2.4rem; }
+  .project > *:not(.project-thumb) { margin-left: 1.25rem; margin-right: 1.25rem; }
+  .project > :last-child { margin-bottom: 1.25rem; }
+  .project h3 { font-size: .95rem; }
+  .project p { font-size: .9rem; }
+
+  /* --- Contact --- */
+  .contact p { font-size: .98rem; }
+  .contact .btn-big { display: block; width: 100%; padding: 1.1rem; }
+  .contact .contact-mail { font-size: .85rem; word-break: break-word; }
+  .qr-codes { gap: .8rem; margin-top: 2rem; padding-top: 1.6rem; }
+  .qr-codes figure { flex: 1; max-width: 150px; }
+  .qr-codes img { width: 100%; }
+
+  /* --- Lien page suivante : gros bouton facile à toucher --- */
+  .next-page {
+    float: none; display: flex; flex-direction: row; justify-content: space-between; align-items: center;
+    width: 100%; margin-top: 2.4rem; padding: 1rem 1.2rem;
+    background: var(--dark); color: #fff; font-size: .95rem;
+  }
+  .next-page small { color: var(--accent); font-size: .62rem; }
+  .next-page:hover { color: #fff; }
+
+  .footer { font-size: .65rem; padding: 1.3rem 1rem; }
+}
+
+/* Très petits écrans (iPhone SE, etc.) */
+@media (max-width: 360px) {
+  .cover h1 { font-size: 2.3rem; }
+  .cover-side { grid-template-columns: 1fr; }
+  .cover-photo { display: none; }
+  .home-menu { grid-template-columns: 1fr; }
+  .home-menu a:last-child { grid-column: auto; }
+}
+
+/* Pas d'effet de survol sur les écrans tactiles */
+@media (hover: none) {
+  .card:hover { border-color: var(--line); }
+  .home-menu a:hover { background: var(--paper); color: var(--ink); }
+  .home-menu a:hover span { color: var(--accent-d); }
+}

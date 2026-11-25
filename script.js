@@ -1,11 +1,17 @@
 // ===== Menu mobile =====
 const toggle = document.querySelector(".nav-toggle");
 const links = document.querySelector(".nav-links");
+const setMenu = open => {
+  links.classList.toggle("open", open);
+  document.body.classList.toggle("menu-open", open);
+  toggle.setAttribute("aria-expanded", open);
+  toggle.setAttribute("aria-label", open ? "Fermer le menu" : "Ouvrir le menu");
+};
 if (toggle && links) {
-  toggle.addEventListener("click", () => {
-    const open = links.classList.toggle("open");
-    toggle.setAttribute("aria-expanded", open);
-  });
+  toggle.addEventListener("click", () => setMenu(!links.classList.contains("open")));
+  links.querySelectorAll("a").forEach(a => a.addEventListener("click", () => setMenu(false)));
+  document.addEventListener("keydown", e => { if (e.key === "Escape") setMenu(false); });
+  window.addEventListener("resize", () => { if (window.innerWidth > 860) setMenu(false); });
 }
 
 // ===== Bordure de la barre de nav au défilement =====
