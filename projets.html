@@ -5,11 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#f4efe7">
   <title>Projets — Babacar Djitte</title>
-  <meta name="description" content="Projets de Babacar Djitte : application d'IA 100 % locale, mise en conformité RGPD d'une PME, portfolio.">
+  <meta name="description" content="Projets de Babacar Djitte : application d'IA 100 % locale, mise en conformité RGPD d'une PME, inventaire du parc avec OCS Inventory et GLPI.">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Babacar Djitte — Portfolio">
   <meta property="og:title" content="Projets — Babacar Djitte">
-  <meta property="og:description" content="Une IA 100 % locale, une mise en conformité RGPD, et ce portfolio.">
+  <meta property="og:description" content="Une IA 100 % locale, une mise en conformité RGPD et un inventaire de parc OCS + GLPI.">
   <meta property="og:url" content="https://babacardjitte38-cyber.github.io/projets.html">
   <meta property="og:image" content="https://babacardjitte38-cyber.github.io/og-image.png">
   <meta property="og:image:width" content="1200">
@@ -48,7 +48,7 @@
       <span class="page-num" aria-hidden="true">04</span>
       <p class="kicker"><span>04</span> Projets</p>
       <h1 class="display">Des projets <em>qui servent</em> à quelque chose.</h1>
-      <p class="lede">Chaque projet part d'un vrai besoin : gagner du temps, protéger des données, se présenter clairement.</p>
+      <p class="lede">Chaque projet part d'un vrai besoin : gagner du temps, protéger des données, garder un parc informatique à jour.</p>
     </section>
 
     <section class="wrap">
@@ -56,7 +56,6 @@
         <button class="active" data-filter="all">Tous</button>
         <button data-filter="stage">Stage</button>
         <button data-filter="ecole">Scolaire</button>
-        <button data-filter="perso">Personnel</button>
       </div>
 
       <div class="projects">
@@ -148,31 +147,54 @@
           </div>
         </article>
 
-        <!-- ===== Projet 3 : Portfolio ===== -->
-        <article class="project reveal" data-d="1" data-cat="perso">
+        <!-- ===== Projet 3 : OCS Inventory + GLPI ===== -->
+        <article class="project reveal" data-d="1" data-cat="ecole">
           <div class="project-visual v-paper">
-            <svg viewBox="0 0 400 240" role="img" aria-label="Fenêtre de navigateur affichant ce portfolio">
-              <rect x="60" y="36" width="280" height="172" rx="14" fill="#fbf8f3" stroke="#dcd3c5"/>
-              <path d="M60 50a14 14 0 0 1 14-14h252a14 14 0 0 1 14 14v12H60z" fill="#ebe4d8"/>
-              <circle cx="78" cy="49" r="4" fill="#c4996a"/><circle cx="92" cy="49" r="4" fill="#dcd3c5"/><circle cx="106" cy="49" r="4" fill="#dcd3c5"/>
-              <rect x="78" y="80" width="118" height="110" rx="60" fill="#2b2926"/>
-              <text x="137" y="146" text-anchor="middle" font-family="Georgia, serif" font-size="34" fill="#f4efe7">B<tspan fill="#c4996a" font-style="italic">D</tspan></text>
-              <rect x="212" y="86" width="108" height="12" rx="6" fill="#1b1a18"/>
-              <rect x="212" y="106" width="76" height="12" rx="6" fill="#9a7046"/>
-              <g fill="#cbbfae"><rect x="212" y="130" width="104" height="5" rx="2.5"/><rect x="212" y="141" width="92" height="5" rx="2.5"/><rect x="212" y="152" width="70" height="5" rx="2.5"/></g>
-              <rect x="212" y="168" width="56" height="18" rx="9" fill="#1b1a18"/>
+            <svg viewBox="0 0 400 240" role="img" aria-label="Des ordinateurs envoient leur inventaire à OCS Inventory, qui le transmet à GLPI">
+              <g fill="none" stroke="#c4996a" stroke-width="1.6" stroke-dasharray="4 4" stroke-linecap="round">
+                <path d="M104 66C134 66 140 100 162 106"/><path d="M104 121h56"/><path d="M104 176C134 176 140 142 162 136"/>
+              </g>
+              <g>
+                <rect x="40" y="46" width="62" height="40" rx="5" fill="#fbf8f3" stroke="#cbbfae"/><rect x="48" y="55" width="30" height="4" rx="2" fill="#1b1a18"/><rect x="48" y="64" width="44" height="3" rx="1.5" fill="#dcd3c5"/><rect x="48" y="71" width="36" height="3" rx="1.5" fill="#dcd3c5"/><rect x="62" y="86" width="18" height="6" fill="#cbbfae"/>
+                <rect x="40" y="101" width="62" height="40" rx="5" fill="#fbf8f3" stroke="#cbbfae"/><rect x="48" y="110" width="30" height="4" rx="2" fill="#1b1a18"/><rect x="48" y="119" width="44" height="3" rx="1.5" fill="#dcd3c5"/><rect x="48" y="126" width="36" height="3" rx="1.5" fill="#dcd3c5"/><rect x="62" y="141" width="18" height="6" fill="#cbbfae"/>
+                <rect x="40" y="156" width="62" height="40" rx="5" fill="#fbf8f3" stroke="#cbbfae"/><rect x="48" y="165" width="30" height="4" rx="2" fill="#1b1a18"/><rect x="48" y="174" width="44" height="3" rx="1.5" fill="#dcd3c5"/><rect x="48" y="181" width="36" height="3" rx="1.5" fill="#dcd3c5"/><rect x="62" y="196" width="18" height="6" fill="#cbbfae"/>
+              </g>
+              <path d="M166 80v82c0 6 15 11 34 11s34-5 34-11V80z" fill="#1b1a18"/>
+              <ellipse cx="200" cy="80" rx="34" ry="11" fill="#3a3733"/>
+              <path d="M166 108c0 6 15 11 34 11s34-5 34-11M166 136c0 6 15 11 34 11s34-5 34-11" fill="none" stroke="#c4996a" stroke-width="1.2" opacity=".7"/>
+              <text x="200" y="131" text-anchor="middle" font-family="Georgia, serif" font-size="17" fill="#f4efe7">OCS</text>
+              <path d="M240 124h22m-7-6 7 6-7 6" fill="none" stroke="#9a7046" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3 3"/>
+              <rect x="270" y="56" width="104" height="132" rx="12" fill="#fbf8f3" stroke="#dcd3c5"/>
+              <text x="284" y="82" font-family="Georgia, serif" font-size="16" fill="#1b1a18">GLPI</text>
+              <rect x="340" y="72" width="22" height="10" rx="5" fill="#c4996a"/>
+              <g fill="#cbbfae">
+                <rect x="284" y="100" width="10" height="10" rx="2.5" fill="#1b1a18"/><rect x="300" y="103" width="56" height="4" rx="2"/>
+                <rect x="284" y="120" width="10" height="10" rx="2.5" fill="#1b1a18"/><rect x="300" y="123" width="48" height="4" rx="2"/>
+                <rect x="284" y="140" width="10" height="10" rx="2.5" fill="#1b1a18"/><rect x="300" y="143" width="52" height="4" rx="2"/>
+                <rect x="284" y="160" width="10" height="10" rx="2.5" fill="#c4996a"/><rect x="300" y="163" width="40" height="4" rx="2"/>
+              </g>
             </svg>
           </div>
           <div class="project-body">
-            <p class="project-meta"><span>Personnel</span><span>Web · Design</span></p>
-            <h3>Ce portfolio</h3>
-            <p>Un site en six pages conçu et codé à la main, sans framework, avec une direction artistique éditoriale, des animations et une version mobile soignée.</p>
+            <p class="project-meta"><span>Projet scolaire</span><span>Systèmes · Inventaire</span></p>
+            <h3>Inventaire automatique du parc avec OCS Inventory et GLPI</h3>
+            <p>Le parc informatique était déjà géré avec GLPI. L'objectif : déployer OCS Inventory pour recenser automatiquement les ordinateurs, puis le relier à GLPI pour que les machines y remontent toutes seules.</p>
+            <ol class="flow" aria-label="Fonctionnement de l'inventaire">
+              <li><b>Agent</b>sur chaque poste</li>
+              <li><b>OCS</b>collecte</li>
+              <li><b>Plugin</b>synchronisation</li>
+              <li><b>GLPI</b>parc à jour</li>
+            </ol>
             <ul class="bullets">
-              <li><strong>HTML, CSS et JavaScript</strong> natifs</li>
-              <li>Hébergé avec <strong>GitHub Pages</strong></li>
-              <li>QR codes personnalisés générés en <strong>Python</strong></li>
+              <li>Déploiement d'<strong>OCS Inventory</strong> et de sa base <strong>MariaDB</strong> avec <strong>Docker Compose</strong>, à côté de GLPI sans le modifier</li>
+              <li><strong>Réseau Docker</strong> commun pour relier GLPI à la base OCS</li>
+              <li><strong>Dépannage par les journaux</strong> : erreur 500 corrigée (paramètre d'authentification manquant), passage de MySQL 8 à MariaDB</li>
+              <li>Création de la base à partir du <strong>schéma fourni par OCS</strong></li>
+              <li>Installation et configuration de l'<strong>agent OCS</strong> sur un poste Windows</li>
+              <li>Rédaction d'un <strong>guide d'installation</strong> pour reproduire le déploiement en 15 minutes</li>
             </ul>
-            <ul class="chips"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>GitHub</li></ul>
+            <p class="status"><span class="dot dot-amber"></span>En cours : connexion à GLPI via le plugin OCS</p>
+            <ul class="chips"><li>GLPI</li><li>OCS Inventory</li><li>Docker</li><li>MariaDB</li><li>Dépannage</li></ul>
           </div>
         </article>
       </div>

@@ -607,3 +607,19 @@ a.contact-item:hover b i { transform: rotate(-45deg); }
   *, *::before, *::after { animation: none !important; transition: none !important; }
   .js .reveal { opacity: 1; transform: none; }
 }
+
+/* ---------- Statut d'un projet ---------- */
+.status {
+  display: inline-flex; align-items: center; gap: .6rem; align-self: flex-start;
+  padding: .45rem .95rem .45rem .8rem; border-radius: 999px;
+  background: #f6ead7; border: 1px solid #e6cfa9;
+  font-size: .8rem !important; font-weight: 500; color: var(--ink) !important;
+}
+.dot-amber { background: #d08a2c; animation: pulse-amber 2.2s infinite; }
+@keyframes pulse-amber {
+  0% { box-shadow: 0 0 0 0 rgba(208, 138, 44, .45); }
+  70%, 100% { box-shadow: 0 0 0 8px rgba(208, 138, 44, 0); }
+}
+@media (max-width: 560px) {
+  .project-meta { flex-wrap: wrap; gap: .2rem 1rem; letter-spacing: .12em; font-size: .66rem; }
+}
