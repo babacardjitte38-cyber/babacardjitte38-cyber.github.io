@@ -3,63 +3,117 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#fbfaf8">
+  <meta name="theme-color" content="#f4efe7">
   <title>Compétences — Babacar Djitte</title>
-  <meta name="description" content="Compétences de Babacar Djitte : systèmes & réseaux, développement, IA et savoir-être.">
+  <meta name="description" content="Compétences de Babacar Djitte : systèmes & réseaux, développement, intelligence artificielle et savoir-être.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Babacar Djitte — Portfolio">
+  <meta property="og:title" content="Compétences — Babacar Djitte">
+  <meta property="og:description" content="Systèmes & réseaux, développement, IA et savoir-être.">
+  <meta property="og:url" content="https://babacardjitte38-cyber.github.io/competences.html">
+  <meta property="og:image" content="https://babacardjitte38-cyber.github.io/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
+  <div class="progress" aria-hidden="true"></div>
+
   <header class="nav">
-    <a href="index.html" class="logo">BD<span>.</span></a>
-    <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span></button>
-    <nav class="nav-links">
-      <a href="apropos.html">À propos</a>
-      <a href="competences.html" class="active" aria-current="page">Compétences</a>
-      <a href="parcours.html">Parcours</a>
-      <a href="projets.html">Projets</a>
-      <a href="contact.html" class="btn btn-small">Contact</a>
-    </nav>
+    <div class="nav-inner wrap">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">B<em>D</em></span>
+        <span class="brand-name">Babacar Djitte</span>
+      </a>
+      <nav class="nav-links" id="menu" aria-label="Navigation principale">
+        <a href="apropos.html"><sup>01</sup>À propos</a>
+        <a href="competences.html" aria-current="page"><sup>02</sup>Compétences</a>
+        <a href="parcours.html"><sup>03</sup>Parcours</a>
+        <a href="projets.html"><sup>04</sup>Projets</a>
+        <a href="contact.html" class="nav-cta">Me contacter</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+    </div>
   </header>
 
-  <main class="page">
-    <section class="section reveal">
-      <h1 class="section-title"><span>02.</span> Compétences</h1>
+  <main>
+    <section class="page-hero wrap">
+      <span class="page-num" aria-hidden="true">02</span>
+      <p class="kicker"><span>02</span> Compétences</p>
+      <h1 class="display">Du réseau au code, <em>jusqu'à l'IA.</em></h1>
+      <p class="lede">Une base solide en systèmes et réseaux, complétée par une vraie expérience de développement full-stack acquise en stage.</p>
+    </section>
+
+    <section class="wrap">
       <div class="skills">
-        <article class="card">
-          <h3>Systèmes &amp; Réseaux</h3>
-          <ul class="tags">
-            <li>Administration systèmes</li><li>Réseaux</li><li>Support IT</li><li>Docker Compose</li>
-          </ul>
+        <article class="skill reveal">
+          <div class="skill-top">
+            <span class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="4.8" r="2.2"/><circle cx="4.8" cy="19" r="2.2"/><circle cx="19.2" cy="19" r="2.2"/><path d="M12 7v4.5M12 11.5 6.3 17.2M12 11.5l5.7 5.7"/><circle cx="12" cy="11.5" r=".9" fill="currentColor"/></svg></span>
+            <span class="skill-num">01</span>
+          </div>
+          <h3>Systèmes &amp; réseaux</h3>
+          <p>Les fondations : administrer, connecter, dépanner et déployer.</p>
+          <ul class="chips"><li>Administration systèmes</li><li>Réseaux</li><li>Support IT</li><li>Docker Compose</li></ul>
         </article>
-        <article class="card">
+
+        <article class="skill reveal" data-d="1">
+          <div class="skill-top">
+            <span class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M13.5 4.5l-3 15"/></svg></span>
+            <span class="skill-num">02</span>
+          </div>
           <h3>Développement</h3>
-          <ul class="tags">
-            <li>Algorithmique</li><li>Python</li><li>FastAPI</li><li>React / Vite</li>
-            <li>SQL / MySQL</li><li>SQLite</li><li>JWT</li>
-          </ul>
+          <p>Du backend à l'interface, avec des bases de données bien structurées.</p>
+          <ul class="chips"><li>Algorithmique</li><li>Python</li><li>FastAPI</li><li>React / Vite</li><li>SQL / MySQL</li><li>SQLite</li><li>JWT</li></ul>
         </article>
-        <article class="card">
-          <h3>IA &amp; Outils</h3>
-          <ul class="tags">
-            <li>Whisper</li><li>Mistral</li><li>Ollama</li><li>VS Code</li><li>Microsoft Office</li><li>Wix</li>
-          </ul>
+
+        <article class="skill reveal">
+          <div class="skill-top">
+            <span class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="2.5"/><path d="M9 3v3M15 3v3M9 18v3M15 18v3M3 9h3M3 15h3M18 9h3M18 15h3"/><path d="M10 10h4v4h-4z"/></svg></span>
+            <span class="skill-num">03</span>
+          </div>
+          <h3>IA &amp; outils</h3>
+          <p>Des modèles d'IA qui tournent en local, et les outils du quotidien.</p>
+          <ul class="chips"><li>Whisper</li><li>Mistral</li><li>Ollama</li><li>VS Code</li><li>Microsoft Office</li><li>Wix</li></ul>
         </article>
-        <article class="card">
+
+        <article class="skill reveal" data-d="1">
+          <div class="skill-top">
+            <span class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3"/><path d="M3.5 19c.8-3 3-4.5 5.5-4.5s4.7 1.5 5.5 4.5"/><circle cx="17" cy="9" r="2.3"/><path d="M16 14.6c2.3.1 3.8 1.4 4.5 3.9"/></svg></span>
+            <span class="skill-num">04</span>
+          </div>
           <h3>Savoir-être</h3>
-          <ul class="tags">
-            <li>Communication</li><li>Organisation</li><li>Autonomie</li><li>Rigueur</li><li>Motivation</li>
-          </ul>
+          <p>Ce qui fait la différence au sein d'une équipe.</p>
+          <ul class="chips"><li>Communication</li><li>Organisation</li><li>Autonomie</li><li>Rigueur</li><li>Motivation</li></ul>
         </article>
       </div>
-      <a class="next-page" href="parcours.html"><small>Page suivante</small>Parcours →</a>
+
+      <a class="next reveal" href="parcours.html">
+        <span><span class="kicker"><span>03</span> Page suivante</span><span class="next-title">Parcours</span></span>
+        <i>→</i>
+      </a>
     </section>
   </main>
 
+  <section class="cta-band">
+    <div class="wrap">
+      <p class="kicker">Un stage à proposer ?</p>
+      <a href="contact.html" class="cta-big"><span>Parlons-<em>en</em></span> <i>→</i></a>
+      <p class="mail">ou écrivez-moi directement : <a class="u" href="mailto:djittebabacar@yahoo.com">djittebabacar@yahoo.com</a></p>
+    </div>
+  </section>
+
   <footer class="footer">
-    <p>© <span id="year"></span> Babacar Djitte — Paris, France</p>
+    <div class="wrap">
+      <p>© <span id="year"></span> Babacar Djitte — Paris, France</p>
+      <nav aria-label="Liens"><a class="u" href="https://www.linkedin.com/in/babacar-djitte-8b0a7b388/" target="_blank" rel="noopener">LinkedIn</a><a class="u" href="cv.pdf" download="CV_Babacar_Djitte.pdf">CV (PDF)</a><a class="u" href="#" data-top>Haut de page ↑</a></nav>
+    </div>
   </footer>
   <script src="script.js"></script>
 </body>

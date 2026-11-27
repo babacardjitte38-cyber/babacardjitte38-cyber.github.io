@@ -3,60 +3,110 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#fbfaf8">
+  <meta name="theme-color" content="#f4efe7">
   <title>À propos — Babacar Djitte</title>
-  <meta name="description" content="Qui est Babacar Djitte : formation, centres d'intérêt et objectifs.">
+  <meta name="description" content="Qui est Babacar Djitte : étudiant en Bachelor Sciences du Système Numérique à l'École CCCLX, passionné par l'informatique.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Babacar Djitte — Portfolio">
+  <meta property="og:title" content="À propos — Babacar Djitte">
+  <meta property="og:description" content="Étudiant en systèmes numériques à Paris, passionné par l'informatique et tourné vers le concret.">
+  <meta property="og:url" content="https://babacardjitte38-cyber.github.io/apropos.html">
+  <meta property="og:image" content="https://babacardjitte38-cyber.github.io/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
+  <div class="progress" aria-hidden="true"></div>
+
   <header class="nav">
-    <a href="index.html" class="logo">BD<span>.</span></a>
-    <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span></button>
-    <nav class="nav-links">
-      <a href="apropos.html" class="active" aria-current="page">À propos</a>
-      <a href="competences.html">Compétences</a>
-      <a href="parcours.html">Parcours</a>
-      <a href="projets.html">Projets</a>
-      <a href="contact.html" class="btn btn-small">Contact</a>
-    </nav>
+    <div class="nav-inner wrap">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">B<em>D</em></span>
+        <span class="brand-name">Babacar Djitte</span>
+      </a>
+      <nav class="nav-links" id="menu" aria-label="Navigation principale">
+        <a href="apropos.html" aria-current="page"><sup>01</sup>À propos</a>
+        <a href="competences.html"><sup>02</sup>Compétences</a>
+        <a href="parcours.html"><sup>03</sup>Parcours</a>
+        <a href="projets.html"><sup>04</sup>Projets</a>
+        <a href="contact.html" class="nav-cta">Me contacter</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+    </div>
   </header>
 
-  <main class="page">
-    <section class="section reveal">
-      <h1 class="section-title"><span>01.</span> À propos</h1>
-      <div class="about">
-        <div class="about-text">
-          <p>
-            Je suis étudiant en <strong>Bachelor Sciences du Système Numérique</strong> à l'<strong>École CCCLX</strong>
-            (Paris Villejuif). Ma formation couvre l'administration systèmes &amp; réseaux, le support IT,
-            les bases de données, la programmation et la communication.
-          </p>
-          <p>
-            Passionné par l'informatique, j'aime transformer un besoin concret en solution qui fonctionne :
-            pendant mon stage, j'ai conçu une <strong>application web d'IA 100&nbsp;% locale</strong> qui transcrit
-            des réunions et rédige automatiquement leurs comptes-rendus.
-          </p>
-          <div class="stats">
-            <div><strong data-count="2">0</strong><span>e année de Bachelor</span></div>
-            <div><strong data-count="1">0</strong><span>stage en développement</span></div>
-            <div><strong data-count="2">0</strong><span>projets majeurs</span></div>
+  <main>
+    <section class="page-hero wrap">
+      <span class="page-num" aria-hidden="true">01</span>
+      <p class="kicker"><span>01</span> À propos</p>
+      <h1 class="display">Un étudiant <em>curieux</em>, tourné vers le concret.</h1>
+      <p class="lede">2<sup>e</sup> année de Bachelor Sciences du Système Numérique à l'École CCCLX, Paris Villejuif.</p>
+    </section>
+
+    <section class="wrap">
+      <div class="about-grid">
+        <figure class="about-photo reveal">
+          <div class="portrait">
+            <!-- Pour ajouter ta photo : <img src="photo.jpg" alt="Babacar Djitte"> -->
+            <span class="portrait-grid" aria-hidden="true"></span>
+            <span class="portrait-mono" aria-hidden="true">B<em>D</em></span>
+          </div>
+          <figcaption>Babacar Djitte — Paris</figcaption>
+        </figure>
+
+        <div>
+          <p class="pullquote reveal">J'aime transformer un besoin concret en <em>solution qui fonctionne</em>.</p>
+          <div class="prose reveal" data-d="1">
+            <p>
+              Je suis étudiant en <strong>Bachelor Sciences du Système Numérique</strong> à l'<strong>École CCCLX</strong>.
+              Ma formation couvre l'administration systèmes &amp; réseaux, le support IT, les bases de données,
+              la programmation et la communication.
+            </p>
+            <p>
+              Pendant mon stage, j'ai conçu une <strong>application web d'intelligence artificielle 100&nbsp;% locale</strong>
+              qui transcrit des réunions et rédige automatiquement leurs comptes-rendus, du backend jusqu'au déploiement.
+            </p>
+            <p>
+              Rigoureux, organisé et autonome, je cherche aujourd'hui un <strong>stage</strong> pour continuer à
+              développer mes compétences techniques au sein d'une équipe.
+            </p>
+          </div>
+          <div class="stats reveal" data-d="2">
+            <div><strong>2<sup>e</sup></strong><span>année de Bachelor</span></div>
+            <div><strong data-count="1">1</strong><span>stage en développement IA</span></div>
+            <div><strong data-count="2">2</strong><span>projets majeurs</span></div>
           </div>
         </div>
-        <div class="about-photo">
-          <!-- Ajoute photo.jpg dans le dossier puis remplace la ligne suivante par :
-               <img src="photo.jpg" alt="Babacar Djitte"> -->
-          <div class="photo-placeholder">BD</div>
-        </div>
       </div>
-      <a class="next-page" href="competences.html"><small>Page suivante</small>Compétences →</a>
+
+      <a class="next reveal" href="competences.html">
+        <span><span class="kicker"><span>02</span> Page suivante</span><span class="next-title">Compétences</span></span>
+        <i>→</i>
+      </a>
     </section>
   </main>
 
+  <section class="cta-band">
+    <div class="wrap">
+      <p class="kicker">Un stage à proposer ?</p>
+      <a href="contact.html" class="cta-big"><span>Parlons-<em>en</em></span> <i>→</i></a>
+      <p class="mail">ou écrivez-moi directement : <a class="u" href="mailto:djittebabacar@yahoo.com">djittebabacar@yahoo.com</a></p>
+    </div>
+  </section>
+
   <footer class="footer">
-    <p>© <span id="year"></span> Babacar Djitte — Paris, France</p>
+    <div class="wrap">
+      <p>© <span id="year"></span> Babacar Djitte — Paris, France</p>
+      <nav aria-label="Liens"><a class="u" href="https://www.linkedin.com/in/babacar-djitte-8b0a7b388/" target="_blank" rel="noopener">LinkedIn</a><a class="u" href="cv.pdf" download="CV_Babacar_Djitte.pdf">CV (PDF)</a><a class="u" href="#" data-top>Haut de page ↑</a></nav>
+    </div>
   </footer>
   <script src="script.js"></script>
 </body>

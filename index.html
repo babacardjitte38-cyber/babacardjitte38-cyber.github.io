@@ -3,73 +3,161 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#fbfaf8">
+  <meta name="theme-color" content="#f4efe7">
   <title>Babacar Djitte — Portfolio</title>
-  <meta name="description" content="Portfolio de Babacar Djitte, étudiant en Bachelor Sciences du Système Numérique : systèmes & réseaux, développement, IA.">
+  <meta name="description" content="Portfolio de Babacar Djitte, étudiant en Bachelor Sciences du Système Numérique à Paris : systèmes & réseaux, développement, IA. À la recherche d'un stage.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Babacar Djitte — Portfolio">
+  <meta property="og:title" content="Babacar Djitte — Portfolio">
+  <meta property="og:description" content="Étudiant en systèmes numériques à Paris : systèmes & réseaux, développement, IA. À la recherche d'un stage.">
+  <meta property="og:url" content="https://babacardjitte38-cyber.github.io/">
+  <meta property="og:image" content="https://babacardjitte38-cyber.github.io/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
+  <div class="progress" aria-hidden="true"></div>
+
   <header class="nav">
-    <a href="index.html" class="logo" aria-current="page">BD<span>.</span></a>
-    <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span></button>
-    <nav class="nav-links">
-      <a href="apropos.html">À propos</a>
-      <a href="competences.html">Compétences</a>
-      <a href="parcours.html">Parcours</a>
-      <a href="projets.html">Projets</a>
-      <a href="contact.html" class="btn btn-small">Contact</a>
-    </nav>
+    <div class="nav-inner wrap">
+      <a href="index.html" class="brand" aria-current="page">
+        <span class="brand-mark">B<em>D</em></span>
+        <span class="brand-name">Babacar Djitte</span>
+      </a>
+      <nav class="nav-links" id="menu" aria-label="Navigation principale">
+        <a href="apropos.html"><sup>01</sup>À propos</a>
+        <a href="competences.html"><sup>02</sup>Compétences</a>
+        <a href="parcours.html"><sup>03</sup>Parcours</a>
+        <a href="projets.html"><sup>04</sup>Projets</a>
+        <a href="contact.html" class="nav-cta">Me contacter</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+    </div>
   </header>
 
-  <main class="cover">
-    <section class="cover-sheet">
-      <div class="cover-dark">
-        <span class="cover-year" id="cover-year">2026</span>
-        <p class="eyebrow">Étudiant · Systèmes &amp; numérique</p>
-        <h1>Portfolio</h1>
-        <p class="cover-name">Babacar Djitte</p>
-        <p class="hero-role">Passionné par <span class="typed" data-words='["les systèmes & réseaux","le développement web","l&apos;intelligence artificielle","le support IT"]'>les systèmes &amp; réseaux</span><span class="cursor">|</span></p>
-        <p class="hero-text">
-          Étudiant en 2<sup>e</sup> année de Bachelor Sciences du Système Numérique à Paris.
-          Rigoureux et motivé, je recherche un <strong>stage</strong> pour développer mes compétences techniques.
+  <main>
+    <!-- ===== Hero ===== -->
+    <section class="hero wrap">
+      <div class="hero-text">
+        <p class="badge"><span class="dot"></span>Disponible pour un stage</p>
+        <p class="kicker">Portfolio — <span id="cover-year">2026</span></p>
+        <h1 class="hero-title">
+          <span class="line"><span>Babacar</span></span>
+          <span class="line"><span><em>Djitte</em></span></span>
+        </h1>
+        <p class="hero-role">
+          Étudiant en systèmes numériques à Paris,<br>
+          passionné par <span class="typed" data-words='["les systèmes & réseaux","le développement web","l&apos;intelligence artificielle","le support IT"]'>les systèmes &amp; réseaux</span><span class="cursor" aria-hidden="true"></span>
         </p>
         <div class="hero-cta">
-          <a href="projets.html" class="btn">Voir mes projets</a>
-          <a href="cv.pdf" class="btn btn-ghost" download="CV_Babacar_Djitte.pdf">Mon CV</a>
+          <a href="projets.html" class="btn">Découvrir mes projets <i>→</i></a>
+          <a href="cv.pdf" class="btn btn-line" download="CV_Babacar_Djitte.pdf">Télécharger mon CV <i>↓</i></a>
         </div>
       </div>
 
-      <div class="cover-side">
-        <div class="cover-photo">
-          <!-- Ajoute photo.jpg dans le dossier puis remplace la ligne suivante par :
+      <figure class="hero-visual">
+        <div class="portrait">
+          <!-- Pour ajouter ta photo : mets photo.jpg dans le dossier et ajoute ici
                <img src="photo.jpg" alt="Babacar Djitte"> -->
-          <span class="initials">BD</span>
+          <span class="portrait-grid" aria-hidden="true"></span>
+          <span class="portrait-mono" aria-hidden="true">B<em>D</em></span>
         </div>
-        <div class="cover-contact">
-          <h3>Contact info</h3>
-          <ul class="socials">
-            <li><a href="mailto:djittebabacar@yahoo.com">djittebabacar@yahoo.com</a></li>
-            <li><a href="https://www.linkedin.com/in/babacar-djitte-8b0a7b388/" target="_blank" rel="noopener">LinkedIn · Babacar Djitte</a></li>
-            <li>Paris, France</li>
-          </ul>
-        </div>
-      </div>
+        <figcaption><span>Paris, France</span><span>Bachelor SSN — 2<sup>e</sup> année</span></figcaption>
+        <a href="contact.html" class="stamp" aria-label="Me contacter pour un stage">
+          <svg viewBox="0 0 132 132" aria-hidden="true">
+            <defs><path id="stamp-circle" d="M66,66 m-49,0 a49,49 0 1,1 98,0 a49,49 0 1,1 -98,0"/></defs>
+            <text><textPath href="#stamp-circle" textLength="300" lengthAdjust="spacing">Disponible · Stage · Paris · Disponible · Stage ·</textPath></text>
+          </svg>
+          <b>↗</b>
+        </a>
+      </figure>
     </section>
 
-    <nav class="home-menu" aria-label="Pages du portfolio">
-      <a href="apropos.html"><span>01</span>À propos</a>
-      <a href="competences.html"><span>02</span>Compétences</a>
-      <a href="parcours.html"><span>03</span>Parcours</a>
-      <a href="projets.html"><span>04</span>Projets</a>
-      <a href="contact.html"><span>05</span>Contact</a>
-    </nav>
+    <!-- ===== Bandeau défilant ===== -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Systèmes &amp; réseaux <i>✦</i> <em>Développement web</em> <i>✦</i> Intelligence artificielle <i>✦</i> <em>Support IT</em> <i>✦</i> Bases de données <i>✦</i> <em>Docker</em> <i>✦</i></span>
+        <span>Systèmes &amp; réseaux <i>✦</i> <em>Développement web</em> <i>✦</i> Intelligence artificielle <i>✦</i> <em>Support IT</em> <i>✦</i> Bases de données <i>✦</i> <em>Docker</em> <i>✦</i></span>
+      </div>
+    </div>
+
+    <!-- ===== Sommaire ===== -->
+    <section class="section wrap">
+      <div class="section-head">
+        <div class="reveal">
+          <p class="kicker">Sommaire</p>
+        </div>
+        <h2 class="display-sm reveal" data-d="1">Tout ce qu'il faut savoir, <em>en quatre pages.</em></h2>
+      </div>
+      <ol class="toc-list">
+        <li class="reveal"><a href="apropos.html"><span class="toc-num">01</span><span class="toc-title">À propos</span><span class="toc-desc">Qui je suis, ma formation et ce qui me motive.</span><span class="toc-arrow">→</span></a></li>
+        <li class="reveal" data-d="1"><a href="competences.html"><span class="toc-num">02</span><span class="toc-title">Compétences</span><span class="toc-desc">Systèmes, réseaux, développement, IA et savoir-être.</span><span class="toc-arrow">→</span></a></li>
+        <li class="reveal" data-d="2"><a href="parcours.html"><span class="toc-num">03</span><span class="toc-title">Parcours</span><span class="toc-desc">Ma formation et mon stage en développement IA.</span><span class="toc-arrow">→</span></a></li>
+        <li class="reveal" data-d="3"><a href="projets.html"><span class="toc-num">04</span><span class="toc-title">Projets</span><span class="toc-desc">Une IA 100 % locale, une mise en conformité RGPD…</span><span class="toc-arrow">→</span></a></li>
+      </ol>
+    </section>
+
+    <!-- ===== Projet à la une ===== -->
+    <section class="wrap">
+      <a href="projets.html" class="feature-card on-dark reveal">
+        <div class="feature-visual">
+          <svg viewBox="0 0 400 240" role="img" aria-label="Onde sonore transformée en compte-rendu écrit">
+            <g fill="#c4996a">
+              <rect x="30" y="111" width="4" height="18" rx="2"/><rect x="38" y="103" width="4" height="34" rx="2"/>
+              <rect x="46" y="94" width="4" height="52" rx="2"/><rect x="54" y="106" width="4" height="28" rx="2"/>
+              <rect x="62" y="85" width="4" height="70" rx="2"/><rect x="70" y="72" width="4" height="96" rx="2"/>
+              <rect x="78" y="90" width="4" height="60" rx="2"/><rect x="86" y="100" width="4" height="40" rx="2"/>
+              <rect x="94" y="79" width="4" height="82" rx="2"/><rect x="102" y="65" width="4" height="110" rx="2"/>
+              <rect x="110" y="83" width="4" height="74" rx="2"/><rect x="118" y="96" width="4" height="48" rx="2"/>
+              <rect x="126" y="75" width="4" height="90" rx="2"/><rect x="134" y="91" width="4" height="58" rx="2"/>
+              <rect x="142" y="102" width="4" height="36" rx="2"/><rect x="150" y="88" width="4" height="64" rx="2"/>
+              <rect x="158" y="98" width="4" height="44" rx="2"/><rect x="166" y="107" width="4" height="26" rx="2"/>
+              <rect x="174" y="100" width="4" height="40" rx="2"/><rect x="182" y="110" width="4" height="20" rx="2"/>
+            </g>
+            <path d="M200 120h30m-8-7 8 7-8 7" fill="none" stroke="#8f877c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <rect x="244" y="52" width="120" height="136" rx="10" fill="#f4efe7"/>
+            <rect x="260" y="70" width="58" height="9" rx="4.5" fill="#1b1a18"/>
+            <g fill="#cbbfae">
+              <rect x="260" y="92" width="88" height="5" rx="2.5"/><rect x="260" y="104" width="76" height="5" rx="2.5"/>
+              <rect x="260" y="116" width="88" height="5" rx="2.5"/><rect x="260" y="128" width="58" height="5" rx="2.5"/>
+            </g>
+            <rect x="260" y="150" width="44" height="16" rx="8" fill="#c4996a"/>
+            <path d="M362 34l4 10 10 4-10 4-4 10-4-10-10-4 10-4z" fill="#c4996a"/>
+          </svg>
+        </div>
+        <div class="feature-body">
+          <p class="kicker">Projet à la une — Stage</p>
+          <h3>Une IA 100 % locale qui transforme une réunion en compte-rendu.</h3>
+          <p>Transcription avec Whisper, rédaction avec Mistral, le tout sans envoyer une seule donnée dans le cloud. Livrée clé en main avec Docker.</p>
+          <ul class="chips"><li>Python</li><li>FastAPI</li><li>React</li><li>Whisper</li><li>Mistral</li><li>Docker</li></ul>
+          <span class="btn btn-light">Voir le projet <i>→</i></span>
+        </div>
+      </a>
+    </section>
   </main>
 
+  <!-- ===== Bandeau contact ===== -->
+  <section class="cta-band">
+    <div class="wrap">
+      <p class="kicker">Un stage à proposer ?</p>
+      <a href="contact.html" class="cta-big"><span>Parlons-<em>en</em></span> <i>→</i></a>
+      <p class="mail">ou écrivez-moi directement : <a class="u" href="mailto:djittebabacar@yahoo.com">djittebabacar@yahoo.com</a></p>
+    </div>
+  </section>
+
   <footer class="footer">
-    <p>© <span id="year"></span> Babacar Djitte — Paris, France</p>
+    <div class="wrap">
+      <p>© <span id="year"></span> Babacar Djitte — Paris, France</p>
+      <nav aria-label="Liens"><a class="u" href="https://www.linkedin.com/in/babacar-djitte-8b0a7b388/" target="_blank" rel="noopener">LinkedIn</a><a class="u" href="cv.pdf" download="CV_Babacar_Djitte.pdf">CV (PDF)</a><a class="u" href="#" data-top>Haut de page ↑</a></nav>
+    </div>
   </footer>
   <script src="script.js"></script>
 </body>

@@ -3,77 +3,200 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#fbfaf8">
+  <meta name="theme-color" content="#f4efe7">
   <title>Projets — Babacar Djitte</title>
-  <meta name="description" content="Projets de Babacar Djitte : application d'IA locale, mise en conformité RGPD, portfolio.">
+  <meta name="description" content="Projets de Babacar Djitte : application d'IA 100 % locale, mise en conformité RGPD d'une PME, portfolio.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Babacar Djitte — Portfolio">
+  <meta property="og:title" content="Projets — Babacar Djitte">
+  <meta property="og:description" content="Une IA 100 % locale, une mise en conformité RGPD, et ce portfolio.">
+  <meta property="og:url" content="https://babacardjitte38-cyber.github.io/projets.html">
+  <meta property="og:image" content="https://babacardjitte38-cyber.github.io/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
+  <div class="progress" aria-hidden="true"></div>
+
   <header class="nav">
-    <a href="index.html" class="logo">BD<span>.</span></a>
-    <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span></button>
-    <nav class="nav-links">
-      <a href="apropos.html">À propos</a>
-      <a href="competences.html">Compétences</a>
-      <a href="parcours.html">Parcours</a>
-      <a href="projets.html" class="active" aria-current="page">Projets</a>
-      <a href="contact.html" class="btn btn-small">Contact</a>
-    </nav>
+    <div class="nav-inner wrap">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">B<em>D</em></span>
+        <span class="brand-name">Babacar Djitte</span>
+      </a>
+      <nav class="nav-links" id="menu" aria-label="Navigation principale">
+        <a href="apropos.html"><sup>01</sup>À propos</a>
+        <a href="competences.html"><sup>02</sup>Compétences</a>
+        <a href="parcours.html"><sup>03</sup>Parcours</a>
+        <a href="projets.html" aria-current="page"><sup>04</sup>Projets</a>
+        <a href="contact.html" class="nav-cta">Me contacter</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+    </div>
   </header>
 
-  <main class="page">
-    <section class="section reveal">
-      <h1 class="section-title"><span>04.</span> Projets</h1>
+  <main>
+    <section class="page-hero wrap">
+      <span class="page-num" aria-hidden="true">04</span>
+      <p class="kicker"><span>04</span> Projets</p>
+      <h1 class="display">Des projets <em>qui servent</em> à quelque chose.</h1>
+      <p class="lede">Chaque projet part d'un vrai besoin : gagner du temps, protéger des données, se présenter clairement.</p>
+    </section>
+
+    <section class="wrap">
       <div class="filters" role="group" aria-label="Filtrer les projets">
         <button class="active" data-filter="all">Tous</button>
         <button data-filter="stage">Stage</button>
         <button data-filter="ecole">Scolaire</button>
         <button data-filter="perso">Personnel</button>
       </div>
+
       <div class="projects">
-        <article class="project card featured" data-cat="stage">
-          <div class="project-thumb" style="--c1:#6366f1;--c2:#22d3ee">🎙️</div>
-          <p class="project-kind">Stage</p>
-          <h3>Transcription audio &amp; comptes-rendus par IA</h3>
-          <p>Application web locale qui transcrit un enregistrement audio puis génère automatiquement un compte-rendu, sans envoyer aucune donnée vers le cloud.</p>
-          <ul class="bullets">
-            <li>Backend <strong>Python / FastAPI</strong>, frontend <strong>React / Vite</strong></li>
-            <li>Transcription avec <strong>Whisper</strong>, rédaction avec <strong>Mistral via Ollama</strong> (100&nbsp;% local)</li>
-            <li>Authentification <strong>JWT</strong>, historique <strong>SQLite</strong>, exports <strong>PDF / DOCX</strong></li>
-            <li>Déploiement complet via <strong>Docker Compose</strong> : aucune installation technique côté client</li>
-          </ul>
-          <ul class="tags small"><li>Python</li><li>FastAPI</li><li>React</li><li>IA</li><li>Docker</li></ul>
+        <!-- ===== Projet 1 : IA ===== -->
+        <article class="project featured reveal" data-cat="stage">
+          <div class="project-visual v-dark">
+            <svg viewBox="0 0 400 240" role="img" aria-label="Onde sonore transformée en compte-rendu écrit">
+              <g fill="#c4996a">
+                <rect x="30" y="111" width="4" height="18" rx="2"/><rect x="38" y="103" width="4" height="34" rx="2"/>
+                <rect x="46" y="94" width="4" height="52" rx="2"/><rect x="54" y="106" width="4" height="28" rx="2"/>
+                <rect x="62" y="85" width="4" height="70" rx="2"/><rect x="70" y="72" width="4" height="96" rx="2"/>
+                <rect x="78" y="90" width="4" height="60" rx="2"/><rect x="86" y="100" width="4" height="40" rx="2"/>
+                <rect x="94" y="79" width="4" height="82" rx="2"/><rect x="102" y="65" width="4" height="110" rx="2"/>
+                <rect x="110" y="83" width="4" height="74" rx="2"/><rect x="118" y="96" width="4" height="48" rx="2"/>
+                <rect x="126" y="75" width="4" height="90" rx="2"/><rect x="134" y="91" width="4" height="58" rx="2"/>
+                <rect x="142" y="102" width="4" height="36" rx="2"/><rect x="150" y="88" width="4" height="64" rx="2"/>
+                <rect x="158" y="98" width="4" height="44" rx="2"/><rect x="166" y="107" width="4" height="26" rx="2"/>
+                <rect x="174" y="100" width="4" height="40" rx="2"/><rect x="182" y="110" width="4" height="20" rx="2"/>
+              </g>
+              <path d="M200 120h30m-8-7 8 7-8 7" fill="none" stroke="#8f877c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <rect x="244" y="52" width="120" height="136" rx="10" fill="#f4efe7"/>
+              <rect x="260" y="70" width="58" height="9" rx="4.5" fill="#1b1a18"/>
+              <g fill="#cbbfae">
+                <rect x="260" y="92" width="88" height="5" rx="2.5"/><rect x="260" y="104" width="76" height="5" rx="2.5"/>
+                <rect x="260" y="116" width="88" height="5" rx="2.5"/><rect x="260" y="128" width="58" height="5" rx="2.5"/>
+              </g>
+              <rect x="260" y="150" width="44" height="16" rx="8" fill="#c4996a"/>
+              <path d="M362 34l4 10 10 4-10 4-4 10-4-10-10-4 10-4z" fill="#c4996a"/>
+            </svg>
+          </div>
+          <div class="project-body">
+            <p class="project-meta"><span>Stage</span><span>Full-stack · IA</span></p>
+            <h3>Transcription audio &amp; comptes-rendus par IA</h3>
+            <p>Une application web qui transcrit un enregistrement puis rédige automatiquement le compte-rendu, sans qu'aucune donnée ne quitte l'ordinateur.</p>
+            <ol class="flow" aria-label="Fonctionnement de l'application">
+              <li><b>Audio</b>réunion enregistrée</li>
+              <li><b>Whisper</b>transcription</li>
+              <li><b>Mistral</b>rédaction</li>
+              <li><b>PDF / DOCX</b>compte-rendu</li>
+            </ol>
+            <ul class="bullets">
+              <li>Backend <strong>Python / FastAPI</strong>, interface <strong>React / Vite</strong></li>
+              <li>IA <strong>100&nbsp;% locale</strong> via <strong>Ollama</strong> : confidentialité garantie</li>
+              <li>Authentification <strong>JWT</strong> et historique <strong>SQLite</strong></li>
+              <li>Déploiement <strong>Docker Compose</strong> : aucune installation technique côté client</li>
+            </ul>
+            <ul class="chips"><li>Python</li><li>FastAPI</li><li>React</li><li>Whisper</li><li>Mistral</li><li>Docker</li></ul>
+          </div>
         </article>
-        <article class="project card" data-cat="ecole">
-          <div class="project-thumb" style="--c1:#f43f5e;--c2:#f59e0b">🔒</div>
-          <p class="project-kind">Projet scolaire</p>
-          <h3>Projet RGPD — Mise en conformité d'une PME</h3>
-          <p>Accompagnement d'une PME dans sa mise en conformité avec le RGPD.</p>
-          <ul class="bullets">
-            <li>Cartographie des données et registre des traitements</li>
-            <li>Outil de gestion des consentements</li>
-            <li>Audit CNIL et sécurisation (sauvegardes, chiffrement)</li>
-            <li>Implémentation via Wix</li>
-          </ul>
-          <ul class="tags small"><li>RGPD</li><li>Sécurité</li><li>Audit</li><li>Wix</li></ul>
+
+        <!-- ===== Projet 2 : RGPD ===== -->
+        <article class="project reveal" data-cat="ecole">
+          <div class="project-visual v-sand">
+            <svg viewBox="0 0 400 240" role="img" aria-label="Bouclier de protection des données">
+              <g fill="#c4996a" opacity=".45">
+                <circle cx="60" cy="50" r="2"/><circle cx="90" cy="50" r="2"/><circle cx="60" cy="80" r="2"/><circle cx="90" cy="80" r="2"/>
+                <circle cx="60" cy="110" r="2"/><circle cx="90" cy="110" r="2"/><circle cx="310" cy="130" r="2"/><circle cx="340" cy="130" r="2"/>
+                <circle cx="310" cy="160" r="2"/><circle cx="340" cy="160" r="2"/><circle cx="310" cy="190" r="2"/><circle cx="340" cy="190" r="2"/>
+              </g>
+              <g transform="rotate(-8 112 136)">
+                <rect x="78" y="92" width="74" height="92" rx="8" fill="#fbf8f3"/>
+                <rect x="90" y="106" width="40" height="6" rx="3" fill="#1b1a18"/>
+                <rect x="90" y="122" width="50" height="4" rx="2" fill="#cbbfae"/><rect x="90" y="132" width="42" height="4" rx="2" fill="#cbbfae"/>
+                <rect x="90" y="142" width="50" height="4" rx="2" fill="#cbbfae"/>
+              </g>
+              <g transform="rotate(8 290 110)">
+                <rect x="254" y="62" width="74" height="92" rx="8" fill="#fbf8f3"/>
+                <rect x="266" y="76" width="34" height="6" rx="3" fill="#1b1a18"/>
+                <rect x="266" y="92" width="50" height="4" rx="2" fill="#cbbfae"/><rect x="266" y="102" width="38" height="4" rx="2" fill="#cbbfae"/>
+                <rect x="266" y="126" width="16" height="16" rx="4" fill="none" stroke="#9a7046" stroke-width="2"/>
+                <path d="M269 134l3.5 3.5 6.5-7" fill="none" stroke="#9a7046" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+              <path d="M200 38 262 60v56c0 42-26 68-62 82-36-14-62-40-62-82V60z" fill="#1b1a18"/>
+              <path d="M200 52 250 70v46c0 34-20 55-50 67-30-12-50-33-50-67V70z" fill="none" stroke="#c4996a" stroke-width="1.5" opacity=".6"/>
+              <path d="M176 120l17 17 33-36" fill="none" stroke="#c4996a" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="project-body">
+            <p class="project-meta"><span>Projet scolaire</span><span>Sécurité · Conformité</span></p>
+            <h3>Mise en conformité RGPD d'une PME</h3>
+            <p>Accompagner une entreprise pour qu'elle protège les données de ses clients et respecte la loi.</p>
+            <ul class="bullets">
+              <li>Cartographie des données et <strong>registre des traitements</strong></li>
+              <li>Outil de <strong>gestion des consentements</strong></li>
+              <li><strong>Audit CNIL</strong> et sécurisation : sauvegardes, chiffrement</li>
+              <li>Implémentation via <strong>Wix</strong></li>
+            </ul>
+            <ul class="chips"><li>RGPD</li><li>Sécurité</li><li>Audit</li><li>Wix</li></ul>
+          </div>
         </article>
-        <article class="project card" data-cat="perso">
-          <div class="project-thumb" style="--c1:#10b981;--c2:#84cc16">🌐</div>
-          <p class="project-kind">Personnel</p>
-          <h3>Ce portfolio</h3>
-          <p>Site personnel responsive réalisé en HTML, CSS et JavaScript, sans framework : animations, filtres de projets, menu mobile.</p>
-          <ul class="tags small"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+
+        <!-- ===== Projet 3 : Portfolio ===== -->
+        <article class="project reveal" data-d="1" data-cat="perso">
+          <div class="project-visual v-paper">
+            <svg viewBox="0 0 400 240" role="img" aria-label="Fenêtre de navigateur affichant ce portfolio">
+              <rect x="60" y="36" width="280" height="172" rx="14" fill="#fbf8f3" stroke="#dcd3c5"/>
+              <path d="M60 50a14 14 0 0 1 14-14h252a14 14 0 0 1 14 14v12H60z" fill="#ebe4d8"/>
+              <circle cx="78" cy="49" r="4" fill="#c4996a"/><circle cx="92" cy="49" r="4" fill="#dcd3c5"/><circle cx="106" cy="49" r="4" fill="#dcd3c5"/>
+              <rect x="78" y="80" width="118" height="110" rx="60" fill="#2b2926"/>
+              <text x="137" y="146" text-anchor="middle" font-family="Georgia, serif" font-size="34" fill="#f4efe7">B<tspan fill="#c4996a" font-style="italic">D</tspan></text>
+              <rect x="212" y="86" width="108" height="12" rx="6" fill="#1b1a18"/>
+              <rect x="212" y="106" width="76" height="12" rx="6" fill="#9a7046"/>
+              <g fill="#cbbfae"><rect x="212" y="130" width="104" height="5" rx="2.5"/><rect x="212" y="141" width="92" height="5" rx="2.5"/><rect x="212" y="152" width="70" height="5" rx="2.5"/></g>
+              <rect x="212" y="168" width="56" height="18" rx="9" fill="#1b1a18"/>
+            </svg>
+          </div>
+          <div class="project-body">
+            <p class="project-meta"><span>Personnel</span><span>Web · Design</span></p>
+            <h3>Ce portfolio</h3>
+            <p>Un site en six pages conçu et codé à la main, sans framework, avec une direction artistique éditoriale, des animations et une version mobile soignée.</p>
+            <ul class="bullets">
+              <li><strong>HTML, CSS et JavaScript</strong> natifs</li>
+              <li>Hébergé avec <strong>GitHub Pages</strong></li>
+              <li>QR codes personnalisés générés en <strong>Python</strong></li>
+            </ul>
+            <ul class="chips"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>GitHub</li></ul>
+          </div>
         </article>
       </div>
-      <a class="next-page" href="contact.html"><small>Page suivante</small>Contact →</a>
+
+      <a class="next reveal" href="contact.html">
+        <span><span class="kicker"><span>05</span> Page suivante</span><span class="next-title">Contact</span></span>
+        <i>→</i>
+      </a>
     </section>
   </main>
 
+  <section class="cta-band">
+    <div class="wrap">
+      <p class="kicker">Un stage à proposer ?</p>
+      <a href="contact.html" class="cta-big"><span>Parlons-<em>en</em></span> <i>→</i></a>
+      <p class="mail">ou écrivez-moi directement : <a class="u" href="mailto:djittebabacar@yahoo.com">djittebabacar@yahoo.com</a></p>
+    </div>
+  </section>
+
   <footer class="footer">
-    <p>© <span id="year"></span> Babacar Djitte — Paris, France</p>
+    <div class="wrap">
+      <p>© <span id="year"></span> Babacar Djitte — Paris, France</p>
+      <nav aria-label="Liens"><a class="u" href="https://www.linkedin.com/in/babacar-djitte-8b0a7b388/" target="_blank" rel="noopener">LinkedIn</a><a class="u" href="cv.pdf" download="CV_Babacar_Djitte.pdf">CV (PDF)</a><a class="u" href="#" data-top>Haut de page ↑</a></nav>
+    </div>
   </footer>
   <script src="script.js"></script>
 </body>

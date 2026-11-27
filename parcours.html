@@ -3,50 +3,96 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#fbfaf8">
+  <meta name="theme-color" content="#f4efe7">
   <title>Parcours — Babacar Djitte</title>
-  <meta name="description" content="Parcours de Babacar Djitte : formation et expérience professionnelle.">
+  <meta name="description" content="Parcours de Babacar Djitte : Bachelor Sciences du Système Numérique et stage en développement d'une application d'IA.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Babacar Djitte — Portfolio">
+  <meta property="og:title" content="Parcours — Babacar Djitte">
+  <meta property="og:description" content="Formation en systèmes numériques et stage en développement IA.">
+  <meta property="og:url" content="https://babacardjitte38-cyber.github.io/parcours.html">
+  <meta property="og:image" content="https://babacardjitte38-cyber.github.io/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
+  <div class="progress" aria-hidden="true"></div>
+
   <header class="nav">
-    <a href="index.html" class="logo">BD<span>.</span></a>
-    <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span></button>
-    <nav class="nav-links">
-      <a href="apropos.html">À propos</a>
-      <a href="competences.html">Compétences</a>
-      <a href="parcours.html" class="active" aria-current="page">Parcours</a>
-      <a href="projets.html">Projets</a>
-      <a href="contact.html" class="btn btn-small">Contact</a>
-    </nav>
+    <div class="nav-inner wrap">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">B<em>D</em></span>
+        <span class="brand-name">Babacar Djitte</span>
+      </a>
+      <nav class="nav-links" id="menu" aria-label="Navigation principale">
+        <a href="apropos.html"><sup>01</sup>À propos</a>
+        <a href="competences.html"><sup>02</sup>Compétences</a>
+        <a href="parcours.html" aria-current="page"><sup>03</sup>Parcours</a>
+        <a href="projets.html"><sup>04</sup>Projets</a>
+        <a href="contact.html" class="nav-cta">Me contacter</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+    </div>
   </header>
 
-  <main class="page">
-    <section class="section reveal">
-      <h1 class="section-title"><span>03.</span> Parcours</h1>
+  <main>
+    <section class="page-hero wrap">
+      <span class="page-num" aria-hidden="true">03</span>
+      <p class="kicker"><span>03</span> Parcours</p>
+      <h1 class="display">Apprendre en cours, <em>prouver en stage.</em></h1>
+      <p class="lede">Une formation généraliste du numérique, et une première expérience où j'ai construit un produit complet de A à Z.</p>
+    </section>
+
+    <section class="wrap">
       <ol class="timeline">
-        <li>
-          <time>2026 — 2027</time>
-          <h3>Bachelor Sciences du Système Numérique (2<sup>e</sup> année)</h3>
-          <p class="where">École CCCLX, Paris Villejuif</p>
-          <p>Administration systèmes &amp; réseaux, support IT, bases de données, programmation, communication.</p>
+        <li class="reveal">
+          <div class="tl-date">2026 — 2027<small>En cours</small></div>
+          <div class="tl-body">
+            <h3>Bachelor Sciences du Système Numérique, 2<sup>e</sup> année</h3>
+            <p class="tl-where">École CCCLX — Paris Villejuif</p>
+            <p>Administration systèmes &amp; réseaux, support IT, bases de données, programmation et communication.</p>
+            <ul class="chips"><li>Systèmes</li><li>Réseaux</li><li>Bases de données</li><li>Programmation</li></ul>
+          </div>
         </li>
-        <li>
-          <time>Stage</time>
-          <h3>Développeur — Application web d'IA</h3>
-          <p class="where">Conception et développement d'un outil de transcription et de comptes-rendus automatiques</p>
-          <p>Backend Python/FastAPI, frontend React/Vite, IA locale (Whisper + Mistral via Ollama), authentification JWT, déploiement Docker Compose.</p>
+        <li class="reveal">
+          <div class="tl-date">Stage<small>Développement IA</small></div>
+          <div class="tl-body">
+            <h3>Développeur — application web d'intelligence artificielle</h3>
+            <p class="tl-where">Outil de transcription audio et de comptes-rendus automatiques</p>
+            <p>Conception et développement complets : backend Python/FastAPI, interface React/Vite, IA 100&nbsp;% locale (Whisper + Mistral via Ollama), authentification JWT, historique SQLite, exports PDF/DOCX et déploiement Docker Compose.</p>
+            <ul class="chips"><li>Python</li><li>FastAPI</li><li>React</li><li>IA locale</li><li>Docker</li></ul>
+          </div>
         </li>
       </ol>
-      <a class="next-page" href="projets.html"><small>Page suivante</small>Projets →</a>
+
+      <a class="next reveal" href="projets.html">
+        <span><span class="kicker"><span>04</span> Page suivante</span><span class="next-title">Projets</span></span>
+        <i>→</i>
+      </a>
     </section>
   </main>
 
+  <section class="cta-band">
+    <div class="wrap">
+      <p class="kicker">Un stage à proposer ?</p>
+      <a href="contact.html" class="cta-big"><span>Parlons-<em>en</em></span> <i>→</i></a>
+      <p class="mail">ou écrivez-moi directement : <a class="u" href="mailto:djittebabacar@yahoo.com">djittebabacar@yahoo.com</a></p>
+    </div>
+  </section>
+
   <footer class="footer">
-    <p>© <span id="year"></span> Babacar Djitte — Paris, France</p>
+    <div class="wrap">
+      <p>© <span id="year"></span> Babacar Djitte — Paris, France</p>
+      <nav aria-label="Liens"><a class="u" href="https://www.linkedin.com/in/babacar-djitte-8b0a7b388/" target="_blank" rel="noopener">LinkedIn</a><a class="u" href="cv.pdf" download="CV_Babacar_Djitte.pdf">CV (PDF)</a><a class="u" href="#" data-top>Haut de page ↑</a></nav>
+    </div>
   </footer>
   <script src="script.js"></script>
 </body>
