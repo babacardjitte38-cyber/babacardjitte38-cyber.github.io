@@ -623,3 +623,4 @@ a.contact-item:hover b i { transform: rotate(-45deg); }
 @media (max-width: 560px) {
   .project-meta { flex-wrap: wrap; gap: .2rem 1rem; letter-spacing: .12em; font-size: .66rem; }
 }
+.status-done { background: #e4efe6; border-color: #bfd8c4; }
